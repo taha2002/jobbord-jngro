@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+{% load bootstrap4 %}
+{% block content %}
+
+
+<h1> {{profile.user.email}} </h1>
+<h1> {{profile.city}} </h1>
+<h1> {{profile.phone_number}} </h1>
+<h1> {{profile.image.url}} </h1>
+
+<a href="profile_edit">edit</a>
+
+{% endblock %}

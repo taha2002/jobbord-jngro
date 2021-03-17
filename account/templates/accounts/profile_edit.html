@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+{% load bootstrap4 %}
+{% block content %}
+
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% bootstrap_form form_u %}
+    {% bootstrap_form form_p %}
+    <input type="submit" value="edit" />
+
+</form>
+<h1>{{msg}}</h1>
+
+{% endblock %}

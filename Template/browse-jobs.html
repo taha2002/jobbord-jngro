@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -11,13 +12,13 @@
 
 	<!-- CSS
 	================================================== -->
-	<link rel="stylesheet" href="assets/plugins/css/plugins.css">
+	<link rel="stylesheet" href={% static 'assets/plugins/css/plugins.css'%}>
     
     <!-- Custom style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/green-style.css">
+    <link href={% static 'assets/css/style.css'%} rel="stylesheet">
+	<link type="text/css" rel="stylesheet" id="jssDefault" href={% static 'assets/css/colors/green-style.css'%}>
     
-	</head>
+</head>
 	<body>
 		<div class="Loader"></div>
 		<div class="wrapper">  

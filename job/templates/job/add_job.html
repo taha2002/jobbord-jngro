@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load bootstrap4 %}
+
+	<div class="clearfix"></div>
+	
+	<!-- Title Header Start -->
+	<section class="inner-header-title" style="background-image:url(assets/img/banner-10.jpg);">
+		<div class="container">
+			<h1> {{job.title}} </h1>
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	<!-- Title Header End -->
+
+
+	<section>
+		<div>
+			<form style="padding : 100px " method="post" class="form" enctype = "multipart/form-data">
+				{% csrf_token %}
+				{% bootstrap_form form %}
+				{% buttons %}
+					<button type="submit" class="btn btn-primary">Submit</button>
+				{% endbuttons %}
+			</form>
+		</div>
+	</section>
+	<!-- Job full detail End -->
+		
+{% endblock body %}
